@@ -16,7 +16,7 @@ pip iinstall -r requirments.txt
 ```
 
 ## Usage
-###Training
+### Training
 
 To train the GAN, run the GAN.py script. The script takes the following arguments:
 
