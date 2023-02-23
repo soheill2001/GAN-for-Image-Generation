@@ -12,7 +12,7 @@ The generator creates new samples of data from random noise vectors, while the d
 
 you can install these libraries using the foloowing code
 ```
-pip iinstall -r requirments.txt
+pip iinstall -r requirements.txt
 ```
 
 ## Usage
