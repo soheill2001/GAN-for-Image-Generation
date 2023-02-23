@@ -12,11 +12,11 @@ The generator creates new samples of data from random noise vectors, while the d
 
 you can install these libraries using the foloowing code
 ```
-pip iinstall -r requirments.txt
+pip iinstall -r requirements.txt
 ```
 
 ## Usage
-###Training
+### Training
 
 To train the GAN, run the GAN.py script. The script takes the following arguments:
 
@@ -26,16 +26,14 @@ To train the GAN, run the GAN.py script. The script takes the following argument
 For example, to train the GAN for 500 epochs with a batch size of 256, run:
 ```
 python GAN.py --epochs 500 --batch_size 256
-
 ```
 This will train Generator and Discriminator and save images for each 10 epoch at `images` folder.
 Also it will save loss of Generator and Discriminator at `loss` folder.
 ### Testing
 To generate images using a pre-trained GAN, run the GAN.py script. The script takes the following arguments:
 
---num_images: The number of images to generate (default is 16).
---generator_path: The path to load the pre-trained generator model (default is "").
---discriminator_path: The path to load the pre-trained discriminator model (default is "").
++ --generator_path: The path to load the pre-trained generator model (default is "").
++ --discriminator_path: The path to load the pre-trained discriminator model (default is "").
 For example, to generate a image using a pre-trained generator, run:
 ```
 python GAN.py --generator_path Gen.h5 --discriminator_path Dis.h5
@@ -45,8 +43,8 @@ This will produce an image and save it at `test` folder.
 ## Results
 After training for 500 epochs with a batch size of 128, the GAN produced the following images:
 
-Generated Images
+![](images/epoch_500.jpg)
 
 The loss plots show the generator and discriminator loss over the course of training:
 
-Loss Plot
+![](loss/loss.jpg)
