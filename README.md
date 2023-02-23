@@ -43,7 +43,7 @@ This will produce an image and save it at `test` folder.
 ## Results
 After training for 500 epochs with a batch size of 128, the GAN produced the following images:
 
-![](Images/epoch_500.jpg)
+![](images/epoch_500.jpg)
 
 The loss plots show the generator and discriminator loss over the course of training:
 
