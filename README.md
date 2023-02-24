@@ -29,6 +29,9 @@ python GAN.py --epochs 500 --batch_size 256
 ```
 This will train Generator and Discriminator and save images for each 10 epoch at `images` folder.
 Also it will save loss of Generator and Discriminator at `loss` folder.
+
+Please note that I trained this model for 500 epochs on Google Colab using GPU, which took approximately 1 hour. If we train the model for something around 5000 epochs, we can potentially achieve better performance, but due to time constraints, I was unable to do so.
+
 ### Testing
 To generate images using a pre-trained GAN, run the GAN.py script. The script takes the following arguments:
 
